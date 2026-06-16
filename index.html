@@ -90,7 +90,7 @@
   .card:hover .card-for { color: var(--gold-light); }
   .card p { font-size: 0.88rem; line-height: 1.75; color: var(--text-muted); font-weight: 300; transition: color 0.3s; }
   .card:hover p { color: rgba(255,255,255,0.65); }
-  .cards-grid-row2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5px; background: rgba(184,150,62,0.15); border: 1px solid rgba(184,150,62,0.15); border-top: none; max-width: calc(66.66%); margin: 0 auto; }
+  .cards-grid-row2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5px; background: rgba(184,150,62,0.15); border: 1px solid rgba(184,150,62,0.15); border-top: none; }
 
   /* SERVIZI TRASVERSALI */
   .extra { padding: 6rem 4rem; background: var(--white); }
@@ -189,7 +189,7 @@
   <div class="hero-text">
     <p class="hero-eyebrow">Il tuo partner di fiducia</p>
     <h1>Un supporto <em>concreto</em><br>per ogni area della tua vita</h1>
-    <p class="hero-sub">GiOKri Life affianca persone, famiglie e imprese in cinque aree strategiche: dalla protezione al benessere, dall'energia alla comunità.</p>
+    <p class="hero-sub">GiOKri Life affianca persone, famiglie, imprese e studi legali in sei aree strategiche: dalla protezione al benessere, dall'energia alla ricerca documentale.</p>
     <div class="hero-actions">
       <a href="#aree" class="btn-primary">Scopri le aree</a>
       <a href="#contatti" class="btn-ghost">Contattaci</a>
@@ -198,7 +198,7 @@
   <div class="hero-visual">
     <div class="hero-emblem">
       <div class="hero-stat">
-        <div class="hero-stat-num">5</div>
+        <div class="hero-stat-num">6</div>
         <div class="hero-stat-label">Aree di expertise</div>
       </div>
       <div class="hero-emblem-inner">
@@ -229,7 +229,7 @@
 <!-- AREE -->
 <section id="aree">
   <div class="aree-header">
-    <p class="section-eyebrow">Le cinque aree</p>
+    <p class="section-eyebrow">Le sei aree</p>
     <h2>Dove possiamo aiutarti</h2>
   </div>
   <div class="cards-grid">
@@ -286,6 +286,19 @@
       <p class="card-for">Per i contesti abitativi</p>
       <h3>Comunità e Condomini</h3>
       <p>Supportiamo condomini e comunità nel migliorare la gestione, la valorizzazione degli immobili e la qualità della vita condivisa.</p>
+    </div>
+    <div class="card">
+      <div class="card-num">06</div>
+      <svg class="card-icon" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M14 6h16l6 6v26a2 2 0 0 1-2 2H14a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2Z" stroke="#B8963E" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M30 6v6h6" stroke="#B8963E" stroke-width="1.5" stroke-linejoin="round"/>
+        <path d="M16 20h12M16 26h12M16 32h8" stroke="#B8963E" stroke-width="1.5" stroke-linecap="round"/>
+        <circle cx="33" cy="33" r="5" stroke="#B8963E" stroke-width="1.5"/>
+        <path d="M37 37l3 3" stroke="#B8963E" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+      <p class="card-for">Per studi legali e professionisti del diritto</p>
+      <h3>Ricerca Documentale e Reportistica Analitica</h3>
+      <p>Supportiamo gli studi legali nella verifica di sentenze, pareri e orientamenti giurisprudenziali, con il contributo dell'intelligenza artificiale per ricerche rapide, accurate e ben documentate.</p>
     </div>
   </div>
 </section>
@@ -369,6 +382,7 @@
         <option>Welfare e Benessere</option>
         <option>Energia ed Efficienza</option>
         <option>Comunità e Condomini</option>
+        <option>Ricerca Documentale e Reportistica Analitica</option>
         <option>Più di un'area</option>
       </select>
       <textarea id="f-msg" placeholder="Descrivi brevemente la tua situazione o esigenza..."></textarea>
