@@ -105,6 +105,22 @@
   @media (max-width: 900px) { .extra-grid { grid-template-columns: 1fr 1fr; } .extra { padding: 4rem 2rem; } }
   @media (max-width: 560px) { .extra-grid { grid-template-columns: 1fr; } }
 
+  /* TEAM */
+  #team { padding: 6rem 4rem; background: var(--cream); }
+  .team-header { text-align: center; margin-bottom: 3.5rem; }
+  .team-header h2 { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.8rem, 3vw, 2.6rem); font-weight: 300; color: var(--navy); }
+  .team-header p { font-size: 0.9rem; color: var(--text-muted); max-width: 560px; margin: 1rem auto 0; font-weight: 300; line-height: 1.75; }
+  .team-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2.5rem; max-width: 1000px; margin: 0 auto; }
+  .team-card { background: var(--white); border: 1px solid rgba(184,150,62,0.18); border-radius: 2px; padding: 2.4rem; }
+  .team-card-top { display: flex; align-items: center; gap: 1.2rem; margin-bottom: 1.4rem; }
+  .team-avatar { width: 56px; height: 56px; border-radius: 50%; background: var(--navy); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 1.4rem; color: var(--gold); flex-shrink: 0; }
+  .team-name { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; font-weight: 500; color: var(--navy); }
+  .team-role { font-size: 0.74rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--gold); margin-top: 0.2rem; }
+  .team-bio { font-size: 0.86rem; line-height: 1.8; color: var(--text-muted); font-weight: 300; margin-bottom: 1.4rem; }
+  .team-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .team-tag { font-size: 0.7rem; letter-spacing: 0.03em; color: var(--navy); background: var(--gold-pale); padding: 0.3rem 0.7rem; border-radius: 2px; font-weight: 500; }
+  @media (max-width: 900px) { .team-grid { grid-template-columns: 1fr; } #team { padding: 4rem 2rem; } }
+
   /* PROMISE */
   .promise { background: var(--navy); padding: 6rem 4rem; text-align: center; position: relative; overflow: hidden; }
   .promise::before { content: 'G'; position: absolute; font-family: 'Cormorant Garamond', serif; font-size: 28rem; font-weight: 300; color: rgba(255,255,255,0.025); top: 50%; left: 50%; transform: translate(-50%, -50%); pointer-events: none; user-select: none; line-height: 1; }
@@ -178,6 +194,7 @@
   <a href="index.html" class="nav-logo">GiO<span>K</span>ri <span style="font-weight:300">Life</span></a>
   <ul class="nav-links">
     <li><a href="#aree">Le aree</a></li>
+    <li><a href="#team">Chi siamo</a></li>
     <li><a href="#contatti">Contatti</a></li>
     <li><a href="privacy.html">Privacy</a></li>
   </ul>
@@ -338,6 +355,52 @@
   </div>
 </section>
 
+<!-- TEAM -->
+<section id="team">
+  <div class="team-header">
+    <p class="section-eyebrow">Chi siamo</p>
+    <h2>Le persone dietro GiOKri Life</h2>
+    <p>Un team con esperienza concreta in settori diversi, unito da un unico obiettivo: offrire soluzioni competenti e su misura, costruite su anni di lavoro sul campo.</p>
+  </div>
+  <div class="team-grid">
+
+    <div class="team-card">
+      <div class="team-card-top">
+        <div class="team-avatar">FK</div>
+        <div>
+          <div class="team-name">Fabio Kristian Scomazzon</div>
+          <div class="team-role">Protezione, Assicurazioni e Welfare</div>
+        </div>
+      </div>
+      <p class="team-bio">Un percorso professionale costruito in oltre trent'anni nel mondo assicurativo e dei servizi alla persona. Dopo le prime esperienze in ambito marketing e commerciale, ha assunto ruoli di crescente responsabilità in compagnie come INA Assitalia e Cattolica Assicurazioni, fino a posizioni di direzione e gestione di rete. Oggi guida l'area Protezione di GiOKri Life con la concretezza di chi ha vissuto il settore da ogni prospettiva: commerciale, manageriale e direzionale.</p>
+      <div class="team-tags">
+        <span class="team-tag">Assicurazioni</span>
+        <span class="team-tag">Welfare</span>
+        <span class="team-tag">Gestione di rete</span>
+        <span class="team-tag">Direzione filiale</span>
+      </div>
+    </div>
+
+    <div class="team-card">
+      <div class="team-card-top">
+        <div class="team-avatar">MK</div>
+        <div>
+          <div class="team-name">Il partner di Marketing Intelligence</div>
+          <div class="team-role">Strategia, Marketing e Ricerca</div>
+        </div>
+      </div>
+      <p class="team-bio">Esperienza pluriennale in attività di Marketing Intelligence per insegne nazionali e internazionali della grande distribuzione e del retail. Ha guidato progetti di Brand Awareness, Customer Profiling, Shopping Behaviour e Marketing Retail Audit per realtà come Zara, Benetton, Esselunga, Coop, Illy, Chicco e Sephora, oltre a percorsi di espansione immobiliare e valutazione strategica del territorio. Questo bagaglio analitico oggi guida l'area Strategia e Marketing di GiOKri Life.</p>
+      <div class="team-tags">
+        <span class="team-tag">Marketing Intelligence</span>
+        <span class="team-tag">Brand Strategy</span>
+        <span class="team-tag">Retail Audit</span>
+        <span class="team-tag">Customer Research</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
 <!-- PROMISE -->
 <section class="promise">
   <p class="promise-eyebrow">Il nostro impegno</p>
@@ -402,6 +465,7 @@
   <a href="index.html" class="footer-logo">GiO<span>K</span>ri <span style="font-weight:300">Life</span></a>
   <ul class="footer-links">
     <li><a href="#aree">Le aree</a></li>
+    <li><a href="#team">Chi siamo</a></li>
     <li><a href="#contatti">Contatti</a></li>
     <li><a href="privacy.html">Privacy Policy</a></li>
   </ul>
